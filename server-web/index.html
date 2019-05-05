@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Venkatt Guhesan's Understanding Microservices</title>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<style>
+html, body {
+	margin: 0px;
+}
+
+div {
+  height: 100px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px black, 0 0 10px black;
+  padding: 10px;
+  display: inline-block;
+  margin: 15px;
+  vertical-align: top;
+  text-align: center;
+}
+</style>
+<script>
+  defaultWelcomeMsg = "No Services Avail. Displaying default message. Hello World!";
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $.get( "/welcome", function( r ) {
+      console.log(r);
+      if (r != null && r.message) {
+        $('#welcomemsg').html(r.message);
+      } else {
+        $('#welcomemsg').html(defaultWelcomeMsg);
+      }
+    });
+ 
+});
+</script>
+</head>
+
+<body>
+
+<!--
+<header>
+	<img src="images/header.jpg" width="100%" height="100"/>
+</header>
+-->
+
+<div>
+<ul>
+	<li><a href="http://localhost:5000/">Home</a></li>
+</ul>
+</div>
+
+
+<div id="welcomemsg">
+	Welcome message goes here
+</div>
+
+
+</body>
+
+</html> 
