@@ -3,7 +3,8 @@
 ## Getting started
 
 ```
-git clone 
+# git clone this project
+cd understanding-microservices-demo 
 npm install
 # window-1
 node server-web/index
