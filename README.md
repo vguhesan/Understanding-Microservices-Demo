@@ -14,3 +14,4 @@ node services/welcome-service
 node services/welcome-service
 ```
 
+See Powerpoint and PDF slide deck for details.
