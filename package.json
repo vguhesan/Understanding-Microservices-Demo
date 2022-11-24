@@ -9,7 +9,7 @@
   "author": "Venkatt Guhesan",
   "license": "MIT",
   "dependencies": {
-    "cote": "^0.20.0",
+    "cote": "^1.0.3",
     "express": "^4.16.4"
   }
 }
