@@ -11,5 +11,6 @@
   "dependencies": {
     "cote": "^1.0.3",
     "express": "^4.16.4"
+    "@dashersw/node-discover": "^1.2.1",
   }
 }
